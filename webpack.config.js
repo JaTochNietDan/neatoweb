@@ -6,7 +6,7 @@ module.exports = {
     watch: true,
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, '')
+        path: path.resolve(__dirname, 'docs')
     },
     mode: 'development',
     node: {
