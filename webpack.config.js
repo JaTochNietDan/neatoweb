@@ -14,7 +14,7 @@ module.exports = {
     },
     plugins: [
         new webpack.ProvidePlugin({
-            Neato: '../libs/neato-0.10.0.min.js',
+            Neato: '../libs/neato-0.9.0.min.js',
             $: 'jquery',
             CryptoJS: 'crypto-js'
         })

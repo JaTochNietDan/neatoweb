@@ -36,7 +36,7 @@
                                     <tr>
                                         <th>Alert</th>
                                         <td>
-                                            <span v-if="state.alert !== ''" class="text-danger">{{ state.alert }}</span>
+                                            <span v-if="state.alert !== null" class="text-danger">{{ state.alert }}</span>
                                             <span v-else class="text-success">None</span>
                                         </td>
                                     </tr>
@@ -128,6 +128,12 @@ export default {
         onConnect: function(test) {
             this.robot.connected = true;
             this.connected = true;
+
+            console.log('Robot:', this.robot);
+
+            //this.robot.getSchedule().done(function(data) {
+            //    console.log('Data:', data);
+            //});
 
             this.loadMapsTimer = setInterval(this.loadMaps, 1000);
         },
