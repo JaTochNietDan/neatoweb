@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Neato Botvac Web Controller</title>
-        <meta name="description" content="Control your Neato Botvac robovac from the web.">
+        <meta name="description" content="Control your Neato Botvac robovac from the web on a laptop/desktop computer.">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -25,7 +25,28 @@
 
     <body>
         <div class="container" style="margin-top: 50px;">
-            <div id="page"></div>
+            <div class="col-lg-8 offset-lg-2">
+                <div class="row mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Control Neato</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Control your Neato Robot from the web!</h6>
+                            <p class="card-text">
+                                This tool allows you to control your Neato Robot from the web, such as on a desktop
+                                computer. I created this tool because I was disappointed to find that there was no way to control
+                                your Neato Robot from the web, only via apps on your phone and I wanted to be able to control it
+                                from my laptop.
+                            </p>
+                            <p class="card-text">
+                                To use the tool, simply login below using Neato's oAuth system. This is entirely safe, we do not
+                                get access to your account or any credentials. All of this app is open source on
+                                <a href="https://github.com/JaTochNietDan/neatoweb" target="_blank">Github</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="page"></div>
+            </div>
         </div>
         <script src="main.js"></script>
         <style>

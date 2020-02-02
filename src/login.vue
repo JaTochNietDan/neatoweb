@@ -1,6 +1,10 @@
 <template>
     <div class="row">
-        <button class="btn btn-primary" v-on:click="login">Connect to Neato Account</button>
+        <div class="card">
+            <div class="card-body">
+                <button class="btn btn-primary" v-on:click="login">Connect to Neato Account</button>
+            </div>
+        </div>
     </div>
 </template>
 
